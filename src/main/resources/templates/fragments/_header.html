@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<header th:fragment="pageHeader">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">pog{O}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" th:href="@{/}">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/first-step}">Step One</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/second-step}">Step Two</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/third-step}">Step Three</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+</html>
